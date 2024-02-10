@@ -1,0 +1,33 @@
+section {
+	margin: 1rem;
+	padding: 1rem;
+	background-color: lightgray;
+	display: block;
+	border-radius: 1rem;
+}
+
+
+.formulario {
+	width: 100%;
+	background-color: lightgray;
+	display: inline-block;
+	align-items: center;
+}
+
+.form_itm {
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.formulario button {
+	margin-bottom: 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between ;
+	align-items: center;
+	gap: 1rem;
+}
