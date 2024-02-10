@@ -1,0 +1,83 @@
+section {
+	margin: 1rem;
+	padding: 1rem;
+	background-color: lightgray;
+	display: block;
+	border-radius: 1rem;
+}
+
+
+
+button {
+	width: 100%;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 1rem;
+	color: black;
+	background-color: #FBE62A;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #F9D423;
+}
+
+textarea {
+	resize: none;
+}
+
+.formulario {
+	width: 100%;
+	display: inline-block;
+	align-items: center;
+}
+
+.form_itm {
+	width: 100%;
+	padding: 1rem;
+	margin-top: 0.3rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	color: grey;
+
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between ;
+	align-items: center;
+	gap: 1rem;
+	position: relative;
+}
+
+
+#logo {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border-radius: 1rem;
+	object-fit: cover;
+}
+
+
+
+@media (max-width: 768px){
+	.wrapper {
+		flex-direction: column;
+	}
+}
+
+::placeholder {
+	font-size: 1rem;
+	color: lightgray;
+}
+
+input[type=date] {
+	font-size: 1rem;
+	color: lightgray;
+  }
+

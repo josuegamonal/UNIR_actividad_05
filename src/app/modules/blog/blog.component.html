@@ -1,1 +1,30 @@
-<p>blog works!</p>
+<section class="forms">
+	<!-- captutamos datos del formulario -->
+	<div class="wrapper">
+		<div class="wrapper_form_img">
+			<img class="form_itm" id="logo" src="https://picsum.photos/600/800" alt="foto logo">
+
+		</div>
+
+		<div class="formulario">
+			<label for="titulo">Título de la publicación</label>
+			<input class="form_itm" id="titulo" type="text" placeholder="Introduce el título de la publicación" name="nombre" required [(ngModel)]="newPost.titulo">
+			<label for="imagen">Imagen</label>
+			<input class="form_itm" id="imagen" type="url" placeholder="Url de la imagen" name="image_url" required [(ngModel)]="newPost.imagen">
+			<label for="texto">Texto de la publicación</label>
+			<textarea class="form_itm" id="texto" name="noticia" id="noticia" cols="30" rows="10" placeholder="Intorduce el texto de la publicación" required [(ngModel)]="newPost.texto"></textarea>
+			<label for="fecha">Fecha</label>
+			<input class="form_itm" id="fecha" type="date" name="date" required [(ngModel)]="newPost.fecha">
+			<button (click)="guardar()">Publicar</button>
+	</div>
+
+
+	</div>
+</section>
+
+<section class="blog">
+	<!-- pintamos datos del formulario -->
+	<div class="wrapper_posts" [innerHTML]="cargarDatos()">
+	</div>
+</section>
+
