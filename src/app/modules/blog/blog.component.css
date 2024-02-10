@@ -6,16 +6,29 @@ section {
 	border-radius: 1rem;
 }
 
+
+
 button {
-	padding: 0.5rem;
+	width: 100%;
+	padding: 1rem;
 	border-radius: 0.5rem;
 	border: none;
-	background-color: FBE62A;
+	font-size: 1rem;
+	color: black;
+	background-color: #FBE62A;
 	cursor: pointer;
 }
+
+button:hover {
+	background-color: #F9D423;
+}
+
+textarea {
+	resize: none;
+}
+
 .formulario {
 	width: 100%;
-	background-color: lightgray;
 	display: inline-block;
 	align-items: center;
 }
@@ -23,12 +36,14 @@ button {
 .form_itm {
 	width: 100%;
 	padding: 1rem;
+	margin-top: 0.3rem;
 	margin-bottom: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	color: grey;
+
 }
 
-.formulario button {
-	margin-bottom: 0;
-}
 
 .wrapper {
 	display: flex;
@@ -36,4 +51,33 @@ button {
 	justify-content:space-between ;
 	align-items: center;
 	gap: 1rem;
+	position: relative;
 }
+
+
+#logo {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	border-radius: 1rem;
+	object-fit: cover;
+}
+
+
+
+@media (max-width: 768px){
+	.wrapper {
+		flex-direction: column;
+	}
+}
+
+::placeholder {
+	font-size: 1rem;
+	color: lightgray;
+}
+
+input[type=date] {
+	font-size: 1rem;
+	color: lightgray;
+  }
+

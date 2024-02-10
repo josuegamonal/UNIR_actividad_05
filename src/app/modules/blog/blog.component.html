@@ -1,6 +1,11 @@
 <section class="forms">
 	<!-- captutamos datos del formulario -->
 	<div class="wrapper">
+		<div class="wrapper_form_img">
+			<img class="form_itm" id="logo" src="https://picsum.photos/600/800" alt="foto logo">
+
+		</div>
+
 		<div class="formulario">
 			<label for="titulo">Título de la publicación</label>
 			<input class="form_itm" id="titulo" type="text" placeholder="Introduce el título de la publicación" name="nombre" required [(ngModel)]="newPost.titulo">
@@ -10,11 +15,7 @@
 			<textarea class="form_itm" id="texto" name="noticia" id="noticia" cols="30" rows="10" placeholder="Intorduce el texto de la publicación" required [(ngModel)]="newPost.texto"></textarea>
 			<label for="fecha">Fecha</label>
 			<input class="form_itm" id="fecha" type="date" name="date" required [(ngModel)]="newPost.fecha">
-			<button class="form_itm" (click)="guardar()">Publicar</button>
-	</div>
-	<div>
-		<img class="form_itm" src="https://placehold.co/600x600" alt="">
-
+			<button (click)="guardar()">Publicar</button>
 	</div>
 
 
@@ -23,21 +24,7 @@
 
 <section class="blog">
 	<!-- pintamos datos del formulario -->
-	<div [innerHTML]="cargarDatos()">
-
+	<div class="wrapper_posts" [innerHTML]="cargarDatos()">
 	</div>
-	<!-- <div class="wrapper">
-		<div class="blog_item">
-			<div class="blog_item_img">
-				<img src="https://placehold.co/600x600" alt="">
-			</div>
-			<div class="blog_item_content">
-				<h2>Titulo de la publicación</h2>
-				<p>Texto de la publicación</p>
-				<p>Fecha de publicación</p>
-			</div>
-	</div>
-	</div> -->
-
 </section>
 
