@@ -1,11 +1,16 @@
 <section class="forms">
+	<!-- captutamos datos del formulario -->
 	<div class="wrapper">
 		<div class="formulario">
-				<input class="form_itm" type="text" placeholder="Título de la publicación" name="nombre" required>
-				<input class="form_itm" type="url" placeholder="Url de la imagen" name="image_url" required>
-				<textarea class="form_itm" name="noticia" id="noticia" cols="30" rows="10" placeholder="Texto de la publicación" required></textarea>
-				<input class="form_itm" type="date" name="date" required>
-				<button class="form_itm" type="submit" name="btn_publish">Publicar</button>
+			<label for="titulo">Título de la publicación</label>
+			<input class="form_itm" id="titulo" type="text" placeholder="Introduce el título de la publicación" name="nombre" required [(ngModel)]="newPost.titulo">
+			<label for="imagen">Imagen</label>
+			<input class="form_itm" id="imagen" type="url" placeholder="Url de la imagen" name="image_url" required [(ngModel)]="newPost.imagen">
+			<label for="texto">Texto de la publicación</label>
+			<textarea class="form_itm" id="texto" name="noticia" id="noticia" cols="30" rows="10" placeholder="Intorduce el texto de la publicación" required [(ngModel)]="newPost.texto"></textarea>
+			<label for="fecha">Fecha</label>
+			<input class="form_itm" id="fecha" type="date" name="date" required [(ngModel)]="newPost.fecha">
+			<button class="form_itm" (click)="guardar()">Publicar</button>
 	</div>
 	<div>
 		<img class="form_itm" src="https://placehold.co/600x600" alt="">
@@ -15,6 +20,21 @@
 
 	</div>
 </section>
+
 <section class="blog">
+	<!-- pintamos datos del formulario -->
+	<div class="wrapper">
+		<div class="blog_item">
+			<div class="blog_item_img">
+				<img src="https://placehold.co/600x600" alt="">
+			</div>
+			<div class="blog_item_content">
+				<h2>Titulo de la publicación</h2>
+				<p>Texto de la publicación</p>
+				<p>Fecha de publicación</p>
+			</div>
+	</div>
+	</div>
 
 </section>
+
